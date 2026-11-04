@@ -11,11 +11,11 @@ const config = {
         v4: true,
     },
 
-    url: 'https://biobotproject-org.github.io',
+    url: 'https://wildfirealarm-org.github.io',
     baseUrl: '/',
 
-    organizationName: 'biobotproject-org',
-    projectName: 'biobotproject-org.github.io',
+    organizationName: 'wildfirealarm-org',
+    projectName: 'wildfirealarm-org.github.io',
     trailingSlash: false,
 
     onBrokenLinks: 'throw',
@@ -33,7 +33,7 @@ const config = {
                 docs: {
                     sidebarPath: './sidebars.js',
                     editUrl:
-                        'https://github.com/biobotproject-org/biobotproject-org.github.io/tree/main/',
+                        'https://github.com/wildfirealarm-org/wildfirealarm-org.github.io/tree/main/',
                 },
                 blog: false,
                 theme: {
@@ -69,7 +69,7 @@ const config = {
                         position: 'right',
                     },
                     {
-                        href: 'https://github.com/biobotproject-org',
+                        href: 'https://github.com/wildfirealarm-org',
                         label: 'GitHub',
                         position: 'right',
                     },
@@ -92,15 +92,15 @@ const config = {
                         items: [
                             {
                                 label: 'Firmware',
-                                href: 'https://github.com/biobotproject-org/biobot-firmware',
+                                href: 'https://github.com/wildfirealarm-org/firmware',
                             },
                             {
                                 label: 'Hardware',
-                                href: 'https://github.com/biobotproject-org/biobot-hardware',
+                                href: 'https://github.com/wildfirealarm-org/hardware',
                             },
                             {
                                 label: 'Dashboard',
-                                href: 'https://github.com/biobotproject-org/biobot-dashboard',
+                                href: 'https://github.com/wildfirealarm-org/dashboard',
                             },
                         ],
                     },
@@ -113,7 +113,7 @@ const config = {
                             },
                             {
                                 label: 'GitHub Org',
-                                href: 'https://github.com/biobotproject-org',
+                                href: 'https://github.com/wildfirealarm-org',
                             },
                         ],
                     },

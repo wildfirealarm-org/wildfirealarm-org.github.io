@@ -25,14 +25,12 @@ The dashboard also shows a live map with the current wind at each node, a rough 
 
 | Repo | Description |
 |---|---|
-| [biobot-firmware](https://github.com/biobotproject-org/biobot-firmware) | Arduino firmware for the Nano ESP32 node: sensors, on-device anomaly detection, Notecard uplink |
-| [biobot-hardware](https://github.com/biobotproject-org/biobot-hardware) | Carrier PCB (Altium), gerbers, BOM, assembly photos |
-| [biobot-cloud](https://github.com/biobotproject-org/biobot-cloud) | Node.js API: Notehub ingest, incidents, email alerts, live map data |
-| [biobot-dashboard](https://github.com/biobotproject-org/biobot-dashboard) | React web dashboard |
-| [biobot-infrastructure](https://github.com/biobotproject-org/biobot-infrastructure) | Docker Compose stack that runs the database, API and dashboard |
-| [biobot-data](https://github.com/biobotproject-org/biobot-data) | Open datasets from test burns and field recordings |
-
-The repository names keep the project's earlier name, BioBot.
+| [firmware](https://github.com/wildfirealarm-org/firmware) | Arduino firmware for the Nano ESP32 node: sensors, on-device anomaly detection, Notecard uplink |
+| [hardware](https://github.com/wildfirealarm-org/hardware) | Carrier PCB (Altium), gerbers, BOM, assembly photos |
+| [cloud](https://github.com/wildfirealarm-org/cloud) | Node.js API: Notehub ingest, incidents, email alerts, live map data |
+| [dashboard](https://github.com/wildfirealarm-org/dashboard) | React web dashboard |
+| [infrastructure](https://github.com/wildfirealarm-org/infrastructure) | Docker Compose stack that runs the database, API and dashboard |
+| [data](https://github.com/wildfirealarm-org/data) | Open datasets from test burns and field recordings |
 
 ## License
 

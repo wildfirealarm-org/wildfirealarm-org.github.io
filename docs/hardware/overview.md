@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Hardware Overview
 
-A Wildfire Alarm node is a carrier PCB that holds off-the-shelf modules and gives them clean power and sensor connectors. The current board is **Fire Detection Device, rev A**. Its design files, gerbers and BOM are in [biobot-hardware](https://github.com/biobotproject-org/biobot-hardware).
+A Wildfire Alarm node is a carrier PCB that holds off-the-shelf modules and gives them clean power and sensor connectors. The current board is **Fire Detection Device, rev A**. Its design files, gerbers and BOM are in [hardware](https://github.com/wildfirealarm-org/hardware).
 
 ## Core components
 
