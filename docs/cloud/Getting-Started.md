@@ -18,11 +18,11 @@ Run the whole stack (database, API and dashboard) on your machine, then feed it 
 
 ## 1. Clone the stack
 
-The API and the dashboard are git submodules of `biobot-infrastructure`:
+The API and the dashboard are git submodules of `infrastructure` (checked out as `biobot-cloud/` and `biobot-dashboard/`):
 
 ```bash
-git clone --recurse-submodules https://github.com/biobotproject-org/biobot-infrastructure.git
-cd biobot-infrastructure
+git clone --recurse-submodules https://github.com/wildfirealarm-org/infrastructure.git
+cd infrastructure
 ```
 
 ## 2. Configure

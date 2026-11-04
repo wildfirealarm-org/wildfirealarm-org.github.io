@@ -38,12 +38,12 @@ const features = [
 ];
 
 const repos = [
-    { name: 'biobot-firmware', desc: 'Node firmware with on-device anomaly detection', lang: 'C++', color: '#f34b7d' },
-    { name: 'biobot-hardware', desc: 'Carrier PCB: schematics, layout, BOM, gerbers', lang: 'Altium', color: '#2178c4' },
-    { name: 'biobot-cloud', desc: 'Node.js API: ingest, incidents, alerts', lang: 'JavaScript', color: '#f1e05a' },
-    { name: 'biobot-dashboard', desc: 'React dashboard and live map', lang: 'JavaScript', color: '#f1e05a' },
-    { name: 'biobot-infrastructure', desc: 'Docker Compose deployment stack', lang: 'Docker', color: '#384d54' },
-    { name: 'biobot-data', desc: 'Open datasets from test burns', lang: 'Data', color: '#e34c26' },
+    { name: 'firmware', desc: 'Node firmware with on-device anomaly detection', lang: 'C++', color: '#f34b7d' },
+    { name: 'hardware', desc: 'Carrier PCB: schematics, layout, BOM, gerbers', lang: 'Altium', color: '#2178c4' },
+    { name: 'cloud', desc: 'Node.js API: ingest, incidents, alerts', lang: 'JavaScript', color: '#f1e05a' },
+    { name: 'dashboard', desc: 'React dashboard and live map', lang: 'JavaScript', color: '#f1e05a' },
+    { name: 'infrastructure', desc: 'Docker Compose deployment stack', lang: 'Docker', color: '#384d54' },
+    { name: 'data', desc: 'Open datasets from test burns', lang: 'Data', color: '#e34c26' },
 ];
 
 export default function Home() {
@@ -66,7 +66,7 @@ export default function Home() {
                         </p>
                         <div className={styles.heroCta}>
                             <Link className={styles.btnPrimary} to="/docs/intro">Get Started</Link>
-                            <Link className={styles.btnSecondary} to="https://github.com/biobotproject-org">
+                            <Link className={styles.btnSecondary} to="https://github.com/wildfirealarm-org">
                                 View on GitHub
                             </Link>
                         </div>
@@ -123,7 +123,7 @@ export default function Home() {
                                 <Link
                                     key={r.name}
                                     className={styles.repoCard}
-                                    to={`https://github.com/biobotproject-org/${r.name}`}
+                                    to={`https://github.com/wildfirealarm-org/${r.name}`}
                                 >
                                     <div className={styles.repoName}>{r.name}</div>
                                     <div className={styles.repoDesc}>{r.desc}</div>

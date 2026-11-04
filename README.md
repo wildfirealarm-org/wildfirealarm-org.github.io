@@ -1,4 +1,4 @@
-# biobotproject-org.github.io
+# wildfirealarm-org.github.io
 
 The Wildfire Alarm project website and documentation, built with
 [Docusaurus](https://docusaurus.io/) and published to GitHub Pages by

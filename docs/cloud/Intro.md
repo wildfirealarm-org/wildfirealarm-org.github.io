@@ -8,7 +8,7 @@ slug: /
 
 # Wildfire Alarm Cloud
 
-**biobot-cloud** is the server-side backend for Wildfire Alarm. It is a Node.js / Express API on MariaDB (Sequelize ORM) that receives sensor data from Blues Notehub, turns node alerts into incidents, emails the hosts, and serves the dashboard.
+**cloud** is the server-side backend for Wildfire Alarm. It is a Node.js / Express API on MariaDB (Sequelize ORM) that receives sensor data from Blues Notehub, turns node alerts into incidents, emails the hosts, and serves the dashboard.
 
 ## What it does
 
@@ -22,7 +22,7 @@ slug: /
 ## Repository layout
 
 ```
-biobot-cloud/
+cloud/
 ├── config/       # Sequelize connection from environment variables
 ├── middleware/   # authentication, admin check, validation, API health tracking
 ├── models/       # Sequelize models
@@ -38,9 +38,9 @@ biobot-cloud/
 
 | Repo | Description |
 |---|---|
-| [biobot-firmware](https://github.com/biobotproject-org/biobot-firmware) | Node firmware: sensors, on-device anomaly detection, Notecard uplink |
-| [biobot-hardware](https://github.com/biobotproject-org/biobot-hardware) | Carrier PCB (Altium), gerbers, BOM |
-| [biobot-cloud](https://github.com/biobotproject-org/biobot-cloud) | **This component**: API, incidents, alerts |
-| [biobot-dashboard](https://github.com/biobotproject-org/biobot-dashboard) | React dashboard |
-| [biobot-infrastructure](https://github.com/biobotproject-org/biobot-infrastructure) | Docker Compose stack for deployment |
-| [biobot-data](https://github.com/biobotproject-org/biobot-data) | Open datasets from test burns |
+| [firmware](https://github.com/wildfirealarm-org/firmware) | Node firmware: sensors, on-device anomaly detection, Notecard uplink |
+| [hardware](https://github.com/wildfirealarm-org/hardware) | Carrier PCB (Altium), gerbers, BOM |
+| [cloud](https://github.com/wildfirealarm-org/cloud) | **This component**: API, incidents, alerts |
+| [dashboard](https://github.com/wildfirealarm-org/dashboard) | React dashboard |
+| [infrastructure](https://github.com/wildfirealarm-org/infrastructure) | Docker Compose stack for deployment |
+| [data](https://github.com/wildfirealarm-org/data) | Open datasets from test burns |

@@ -7,7 +7,7 @@ sidebar_position: 6
 
 # Deployment
 
-Wildfire Alarm runs as three containers from [biobot-infrastructure](https://github.com/biobotproject-org/biobot-infrastructure): MariaDB, the API, and the dashboard (nginx serving the React build and proxying `/api/` to the API). One public hostname is enough.
+Wildfire Alarm runs as three containers from [infrastructure](https://github.com/wildfirealarm-org/infrastructure): MariaDB, the API, and the dashboard (nginx serving the React build and proxying `/api/` to the API). One public hostname is enough.
 
 ```
 browser -> your reverse proxy (443, TLS)
@@ -25,8 +25,8 @@ Any Linux host with Docker and Docker Compose v2.24 or later; 1 GB of RAM is eno
 ```bash
 sudo mkdir -p /opt/wildfire-alarm && sudo chown $USER /opt/wildfire-alarm
 cd /opt/wildfire-alarm
-git clone --recurse-submodules https://github.com/biobotproject-org/biobot-infrastructure.git
-cd biobot-infrastructure
+git clone --recurse-submodules https://github.com/wildfirealarm-org/infrastructure.git
+cd infrastructure
 cp .env.example .env && chmod 600 .env    # fill in, see Getting Started
 ```
 
@@ -78,7 +78,7 @@ The API answers every valid event with a 2xx code, and repeated deliveries are i
 Work as the user that owns the checkout, not as root. Root-owned files in `.git` break later pulls.
 
 ```bash
-cd /opt/wildfire-alarm/biobot-infrastructure
+cd /opt/wildfire-alarm/infrastructure
 git pull
 git submodule update --init
 docker compose build backend frontend      # only what changed
@@ -93,7 +93,7 @@ Schema changes are applied when the API starts. Before an update that changes th
 A daily dump with 14 days of retention, as a crontab entry:
 
 ```
-30 3 * * * cd /opt/wildfire-alarm/biobot-infrastructure && docker compose exec -T db sh -c 'mariadb-dump -uroot -p"$MARIADB_ROOT_PASSWORD" --single-transaction biobot' | gzip > /opt/wildfire-alarm/backups/biobot-$(date +\%F).sql.gz && find /opt/wildfire-alarm/backups -name 'biobot-*.sql.gz' -mtime +14 -delete
+30 3 * * * cd /opt/wildfire-alarm/infrastructure && docker compose exec -T db sh -c 'mariadb-dump -uroot -p"$MARIADB_ROOT_PASSWORD" --single-transaction biobot' | gzip > /opt/wildfire-alarm/backups/biobot-$(date +\%F).sql.gz && find /opt/wildfire-alarm/backups -name 'biobot-*.sql.gz' -mtime +14 -delete
 ```
 
 Restore:
@@ -116,7 +116,7 @@ Return with `git checkout main` once the fix is in.
 
 ## This documentation site
 
-This site is the [biobotproject-org.github.io](https://github.com/biobotproject-org/biobotproject-org.github.io) repository, built with Docusaurus. Every push to `main` builds it and publishes it to GitHub Pages through `.github/workflows/deploy.yml`. To preview locally:
+This site is the [wildfirealarm-org.github.io](https://github.com/wildfirealarm-org/wildfirealarm-org.github.io) repository, built with Docusaurus. Every push to `main` builds it and publishes it to GitHub Pages through `.github/workflows/deploy.yml`. To preview locally:
 
 ```bash
 npm ci
