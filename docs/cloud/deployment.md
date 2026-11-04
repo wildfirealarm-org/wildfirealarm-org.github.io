@@ -116,7 +116,7 @@ Return with `git checkout main` once the fix is in.
 
 ## This documentation site
 
-This site is the [wildfirealarm-org.github.io](https://github.com/wildfirealarm-org/wildfirealarm-org.github.io) repository, built with Docusaurus. Every push to `main` builds it and publishes it to GitHub Pages through `.github/workflows/deploy.yml`. To preview locally:
+This site is the [wildfirealarm-org.github.io](https://github.com/wildfirealarm-org/wildfirealarm-org.github.io) repository, built with Docusaurus. Every push to `main` builds it and publishes it to GitHub Pages at docs.wildfirealarm.org (custom domain set by `static/CNAME`) through `.github/workflows/deploy.yml`. To preview locally:
 
 ```bash
 npm ci
