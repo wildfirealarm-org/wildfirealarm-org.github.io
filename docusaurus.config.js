@@ -11,7 +11,7 @@ const config = {
         v4: true,
     },
 
-    url: 'https://wildfirealarm-org.github.io',
+    url: 'https://docs.wildfirealarm.org',
     baseUrl: '/',
 
     organizationName: 'wildfirealarm-org',

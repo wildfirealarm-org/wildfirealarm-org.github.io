@@ -1,7 +1,7 @@
 # wildfirealarm-org.github.io
 
 The Wildfire Alarm project website and documentation, built with
-[Docusaurus](https://docusaurus.io/) and published to GitHub Pages by
+[Docusaurus](https://docusaurus.io/) and published at <https://docs.wildfirealarm.org> through GitHub Pages by
 the workflow in `.github/workflows/deploy.yml` on every push to `main`.
 
 ```sh
